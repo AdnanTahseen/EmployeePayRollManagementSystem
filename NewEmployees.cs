@@ -30,6 +30,10 @@ namespace EmployeePayRollManagementSystem
 
                 saveEmp.saveNewEmployeeInformation();
             }
+            else
+            {
+                MessageBox.Show("All fields are required!","Employees PayRoll Management System",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
     }
 }

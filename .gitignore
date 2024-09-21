@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/MessageBoxSuccess.cs
+/MessageBoxSuccess.Designer.cs
+/MessageBoxSuccess.resx
