@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace EmployeePayRollManagementSystem
 {
-    internal class NewEmployeeSaveInformation
+    internal class SaveNewEmployeeInformation
     {
         private string newEmpString = ConfigurationManager.ConnectionStrings["payroll"].ConnectionString;
 

@@ -27,6 +27,7 @@ namespace EmployeePayRollManagementSystem
                 SqlConnection update_connection = new SqlConnection(update_string);
                 SqlCommand update_command = new SqlCommand(update_query, update_connection);
                 update_connection.Open();
+                update_command.Parameters.AddWithValue("@id", emp_id);
                 update_command.Parameters.AddWithValue("@fname",emp_first_name);
                 update_command.Parameters.AddWithValue("@lname",emp_last_name);
                 update_command.Parameters.AddWithValue("@email",emp_email);
@@ -41,6 +42,7 @@ namespace EmployeePayRollManagementSystem
                 update_command.Parameters.AddWithValue("@designation",emp_designation);
                 update_command.Parameters.AddWithValue("@bloodgroup",emp_bloodgroup);
                 update_command.Parameters.AddWithValue("@basicsalary",emp_basicsalary);
+                update_command.Parameters.AddWithValue("@address", emp_address);
                 MemoryStream imageToBytes = new MemoryStream();
                 emp_pb.Image.Save(imageToBytes, emp_pb.Image.RawFormat);
                 Byte[] imgBytes = imageToBytes.GetBuffer();

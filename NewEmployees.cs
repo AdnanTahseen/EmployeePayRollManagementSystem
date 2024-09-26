@@ -33,7 +33,7 @@ namespace EmployeePayRollManagementSystem
             {
                 if (nud_save_age.Value >= 18)
                 {
-                    NewEmployeeSaveInformation saveEmp = new NewEmployeeSaveInformation();
+                    SaveNewEmployeeInformation saveEmp = new SaveNewEmployeeInformation();
 
                     result = saveEmp.saveNewEmployeeInformation(
                     this.tb_save_fname.Text, this.tb_save_lname.Text, this.tb_save_email.Text, long.Parse(this.tb_save_contact.Text),
@@ -278,6 +278,10 @@ namespace EmployeePayRollManagementSystem
                     MessageBox.Show("You can't employ a under age person!", "Employee PayRoll Management System", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            else
+            {
+                MessageBox.Show("One or more fields are empty!","Employees PayRoll Management System",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }      
         }
 
         private void Cb_emp_delete_Click(object sender, EventArgs e)
@@ -287,7 +291,16 @@ namespace EmployeePayRollManagementSystem
 
         private void Btn_show_emp_table_Click(object sender, EventArgs e)
         {
-            Program.emp_table.ShowDialog();
+            try
+            {
+                EmployeesInformationTable emp_table = new EmployeesInformationTable();
+                emp_table.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString(),"Employees Information Table",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
     }
 }

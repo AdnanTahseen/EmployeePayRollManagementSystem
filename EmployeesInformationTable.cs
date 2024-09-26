@@ -21,6 +21,9 @@ namespace EmployeePayRollManagementSystem
         {
             // TODO: This line of code loads data into the 'emp_payrollDataSetInformationTable.employees' table. You can move, or remove it, as needed.
             this.employeesTableAdapter.Fill(this.emp_payrollDataSetInformationTable.employees);
+            DataGridViewImageColumn emp_image_col = new DataGridViewImageColumn();
+            emp_image_col = (DataGridViewImageColumn)dataGridView1.Columns[16];
+            emp_image_col.ImageLayout = DataGridViewImageCellLayout.Zoom;
 
         }
     }

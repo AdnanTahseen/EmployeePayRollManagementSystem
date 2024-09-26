@@ -10,7 +10,6 @@ namespace EmployeePayRollManagementSystem
     static class Program
     {
         public static Login_PayRoll log_pr;
-        public static EmployeesInformationTable emp_table;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -20,10 +19,9 @@ namespace EmployeePayRollManagementSystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             log_pr = new Login_PayRoll();
-            emp_table = new EmployeesInformationTable();
             //Application.Run(log_pr);
             //Application.Run(new Registration_PayRoll());
-            Application.Run(new NewEmployees());
+            Application.Run(new EmployeesAttendance());
         }
     }
 }
