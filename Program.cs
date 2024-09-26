@@ -21,7 +21,7 @@ namespace EmployeePayRollManagementSystem
             log_pr = new Login_PayRoll();
             //Application.Run(log_pr);
             //Application.Run(new Registration_PayRoll());
-            Application.Run(new NewEmployees());
+            Application.Run(new EmployeesAttendance());
         }
     }
 }

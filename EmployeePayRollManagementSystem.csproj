@@ -40,11 +40,20 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\..\..\..\..\Bunifu Controls\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\..\..\Bunifu Controls\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
       <HintPath>..\..\..\..\..\Bunifu Controls\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
       <HintPath>..\..\..\..\..\Bunifu Controls\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
+      <HintPath>..\..\..\..\..\Bunifu Controls\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\..\..\..\Bunifu Controls\Bunifu_UI_WinForms_5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Core.WinForms, Version=26.1462.35.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
     <Reference Include="Syncfusion.Grid.Base, Version=26.1462.35.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
@@ -71,6 +80,9 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.WinControls, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Crystal, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.UI, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="TelerikCommon, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
     <Reference Include="XanderUI">
@@ -96,11 +108,48 @@
     <Compile Include="EmployeesAttendance.Designer.cs">
       <DependentUpon>EmployeesAttendance.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeesAttendanceTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesAttendanceTable.Designer.cs">
+      <DependentUpon>EmployeesAttendanceTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesInformationTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesInformationTable.Designer.cs">
+      <DependentUpon>EmployeesInformationTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmployeesPayRoll.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EmployeesPayRoll.Designer.cs">
       <DependentUpon>EmployeesPayRoll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emp_payrollDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emp_payrollDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="emp_payrollDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emp_payrollDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="emp_payrollDataSetAttendance.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emp_payrollDataSetAttendance.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="emp_payrollDataSetInformationTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emp_payrollDataSetInformationTable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="emp_payrollDataSet_Del.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emp_payrollDataSet_Del.xsd</DependentUpon>
     </Compile>
     <Compile Include="Login_PayRoll.cs">
       <SubType>Form</SubType>
@@ -114,6 +163,7 @@
     <Compile Include="NewEmployees.Designer.cs">
       <DependentUpon>NewEmployees.cs</DependentUpon>
     </Compile>
+    <Compile Include="Practice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration_PayRoll.cs">
@@ -122,7 +172,8 @@
     <Compile Include="Registration_PayRoll.Designer.cs">
       <DependentUpon>Registration_PayRoll.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewEmployeesInformation.cs" />
+    <Compile Include="SaveNewEmployeeInformation.cs" />
+    <Compile Include="UpdateEmployeeInformation.cs" />
     <EmbeddedResource Include="AboutAuthor.resx">
       <DependentUpon>AboutAuthor.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +182,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeesAttendance.resx">
       <DependentUpon>EmployeesAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesAttendanceTable.resx">
+      <DependentUpon>EmployeesAttendanceTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesInformationTable.resx">
+      <DependentUpon>EmployeesInformationTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeesPayRoll.resx">
       <DependentUpon>EmployeesPayRoll.cs</DependentUpon>
@@ -150,10 +207,66 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Registration_PayRoll.resx">
       <DependentUpon>Registration_PayRoll.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="emp_payrollDataSet.xsc">
+      <DependentUpon>emp_payrollDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="emp_payrollDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>emp_payrollDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="emp_payrollDataSet.xss">
+      <DependentUpon>emp_payrollDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="emp_payrollDataSet1.xsc">
+      <DependentUpon>emp_payrollDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="emp_payrollDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>emp_payrollDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="emp_payrollDataSet1.xss">
+      <DependentUpon>emp_payrollDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="emp_payrollDataSetAttendance.xsc">
+      <DependentUpon>emp_payrollDataSetAttendance.xsd</DependentUpon>
+    </None>
+    <None Include="emp_payrollDataSetAttendance.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>emp_payrollDataSetAttendance.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="emp_payrollDataSetAttendance.xss">
+      <DependentUpon>emp_payrollDataSetAttendance.xsd</DependentUpon>
+    </None>
+    <None Include="emp_payrollDataSetInformationTable.xsc">
+      <DependentUpon>emp_payrollDataSetInformationTable.xsd</DependentUpon>
+    </None>
+    <None Include="emp_payrollDataSetInformationTable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>emp_payrollDataSetInformationTable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="emp_payrollDataSetInformationTable.xss">
+      <DependentUpon>emp_payrollDataSetInformationTable.xsd</DependentUpon>
+    </None>
+    <None Include="emp_payrollDataSet_Del.xsc">
+      <DependentUpon>emp_payrollDataSet_Del.xsd</DependentUpon>
+    </None>
+    <None Include="emp_payrollDataSet_Del.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>emp_payrollDataSet_Del.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="emp_payrollDataSet_Del.xss">
+      <DependentUpon>emp_payrollDataSet_Del.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -167,8 +280,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Images\" />
+    <None Include="Images\No-image.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
