@@ -209,7 +209,11 @@ namespace EmployeePayRollManagementSystem
             {
                 if (dr == DialogResult.Yes)
                 {
-                    sendIDForDelete(int.Parse(this.cb_emp_delete.Text));
+                    sendIDForDeleteFromEmployees(int.Parse(this.cb_emp_delete.Text));
+                    sendIDForDeleteFromEmpAllowances(int.Parse(this.cb_emp_delete.Text));
+                    sendIFForDeleteFromEmpAttendance(int.Parse(this.cb_emp_delete.Text));
+                    sendIFForDeleteFromFinalSalary(int.Parse(this.cb_emp_delete.Text));
+                    sendIFForDeleteFromSalaryWithAllowances(int.Parse(this.cb_emp_delete.Text));
                 }
             }
             else
@@ -218,7 +222,83 @@ namespace EmployeePayRollManagementSystem
             }
         }
 
-        private void sendIDForDelete(int selectedValue)
+        private void sendIFForDeleteFromSalaryWithAllowances(int selectedValue)
+        {
+            string del_query = "DELETE FROM salaryWithAllowances where emp_id=@del_id";
+            SqlConnection del_connection = new SqlConnection(connection_string);
+            try
+            {
+                del_connection.Open();
+                SqlCommand del_command = new SqlCommand(del_query, del_connection);
+                del_command.Parameters.AddWithValue("@del_id", selectedValue);
+                del_command.ExecuteNonQuery();
+                //MessageBox.Show("Employee information deleted successfully.", "Employee PayRoll Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                del_connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Employees PayRoll Management System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void sendIFForDeleteFromFinalSalary(int selectedValue)
+        {
+            string del_query = "DELETE FROM finalsalary where emp_id=@del_id";
+            SqlConnection del_connection = new SqlConnection(connection_string);
+            try
+            {
+                del_connection.Open();
+                SqlCommand del_command = new SqlCommand(del_query, del_connection);
+                del_command.Parameters.AddWithValue("@del_id", selectedValue);
+                del_command.ExecuteNonQuery();
+                //MessageBox.Show("Employee information deleted successfully.", "Employee PayRoll Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                del_connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Employees PayRoll Management System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void sendIFForDeleteFromEmpAttendance(int selectedValue)
+        {
+            string del_query = "DELETE FROM emp_attendance where emp_id=@del_id";
+            SqlConnection del_connection = new SqlConnection(connection_string);
+            try
+            {
+                del_connection.Open();
+                SqlCommand del_command = new SqlCommand(del_query, del_connection);
+                del_command.Parameters.AddWithValue("@del_id", selectedValue);
+                del_command.ExecuteNonQuery();
+                //MessageBox.Show("Employee information deleted successfully.", "Employee PayRoll Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                del_connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Employees PayRoll Management System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void sendIDForDeleteFromEmpAllowances(int selectedValue)
+        {
+            string del_query = "DELETE FROM emp_allowances where emp_id=@del_id";
+            SqlConnection del_connection = new SqlConnection(connection_string);
+            try
+            {
+                del_connection.Open();
+                SqlCommand del_command = new SqlCommand(del_query, del_connection);
+                del_command.Parameters.AddWithValue("@del_id", selectedValue);
+                del_command.ExecuteNonQuery();
+                //MessageBox.Show("Employee information deleted successfully.", "Employee PayRoll Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                del_connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Employees PayRoll Management System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void sendIDForDeleteFromEmployees(int selectedValue)
         {
             string del_query = "DELETE FROM employees where emp_id=@del_id";
             SqlConnection del_connection = new SqlConnection(connection_string);
