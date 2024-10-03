@@ -23,18 +23,15 @@ namespace EmployeePayRollManagementSystem
         {
             InitializeComponent();
         }
-
         private void Button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void LinkLabel_Registration_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Registration_PayRoll reg_pr = new Registration_PayRoll();
             reg_pr.ShowDialog();
         }
-
         private void Btn_login_Click(object sender, EventArgs e)
         {
             if(tb_username.Text!="" && tb_password.Text!="")
@@ -76,14 +73,12 @@ namespace EmployeePayRollManagementSystem
             }
             
         }
-
         private void Login_PayRoll_VisibleChanged(object sender, EventArgs e)
         {
             tb_username.Clear();
             tb_password.Clear();
             tb_username.Focus();
         }
-
         private void Tb_username_Leave(object sender, EventArgs e)
         {
             if(string.IsNullOrEmpty(tb_username.Text)==false)
@@ -99,7 +94,6 @@ namespace EmployeePayRollManagementSystem
                 }
             }
         }
-
         private void Tb_password_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tb_password.Text) == false)
