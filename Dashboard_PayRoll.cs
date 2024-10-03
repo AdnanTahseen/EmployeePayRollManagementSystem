@@ -69,6 +69,8 @@ namespace EmployeePayRollManagementSystem
 
         private void Dashboard_PayRoll_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'emp_payrollDataSetEmployeesInformationTable.employees' table. You can move, or remove it, as needed.
+            this.employeesTableAdapter.Fill(this.emp_payrollDataSetEmployeesInformationTable.employees);
             string image_query ="SELECT ad_email, ad_photo from admin where ad_email='"+admin_email+"'";
             SqlConnection dash_connection = new SqlConnection(dashboard_string);
             try

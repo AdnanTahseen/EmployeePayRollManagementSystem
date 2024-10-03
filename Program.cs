@@ -19,9 +19,10 @@ namespace EmployeePayRollManagementSystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             log_pr = new Login_PayRoll();
-            //Application.Run(log_pr);
+            Application.Run(log_pr);
             //Application.Run(new Registration_PayRoll());
-            Application.Run(new EmployeesAttendance());
+            //Application.Run(new EmployeesAttendance());
+            //Application.Run(new EmployeesPayRoll());
         }
     }
 }

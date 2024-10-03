@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="emp_payrollDataSetEmployeesInformationTable" targetNamespace="http://tempuri.org/emp_payrollDataSetEmployeesInformationTable.xsd" xmlns:mstns="http://tempuri.org/emp_payrollDataSetEmployeesInformationTable.xsd" xmlns="http://tempuri.org/emp_payrollDataSetEmployeesInformationTable.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="emp_payrollConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="emp_payrollConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.EmployeePayRollManagementSystem.Properties.Settings.GlobalReference.Default.emp_payrollConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="employeesTableAdapter" GeneratorDataComponentClassName="employeesTableAdapter" Name="employees" UserDataComponentName="employeesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="emp_payrollConnectionString (Settings)" DbObjectName="emp_payroll.dbo.employees" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT emp_first_name, emp_last_name, emp_email, emp_contact, emp_qualification, emp_city, emp_province, emp_designation, emp_bloodgroup, emp_basicsalary, emp_address FROM dbo.employees</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="emp_first_name" DataSetColumn="emp_first_name" />
+              <Mapping SourceColumn="emp_last_name" DataSetColumn="emp_last_name" />
+              <Mapping SourceColumn="emp_email" DataSetColumn="emp_email" />
+              <Mapping SourceColumn="emp_contact" DataSetColumn="emp_contact" />
+              <Mapping SourceColumn="emp_qualification" DataSetColumn="emp_qualification" />
+              <Mapping SourceColumn="emp_city" DataSetColumn="emp_city" />
+              <Mapping SourceColumn="emp_province" DataSetColumn="emp_province" />
+              <Mapping SourceColumn="emp_designation" DataSetColumn="emp_designation" />
+              <Mapping SourceColumn="emp_bloodgroup" DataSetColumn="emp_bloodgroup" />
+              <Mapping SourceColumn="emp_basicsalary" DataSetColumn="emp_basicsalary" />
+              <Mapping SourceColumn="emp_address" DataSetColumn="emp_address" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="emp_payrollDataSetEmployeesInformationTable" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="emp_payrollDataSetEmployeesInformationTable" msprop:Generator_UserDSName="emp_payrollDataSetEmployeesInformationTable">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="employees" msprop:Generator_TableClassName="employeesDataTable" msprop:Generator_TableVarName="tableemployees" msprop:Generator_TablePropName="employees" msprop:Generator_RowDeletingName="employeesRowDeleting" msprop:Generator_RowChangingName="employeesRowChanging" msprop:Generator_RowEvHandlerName="employeesRowChangeEventHandler" msprop:Generator_RowDeletedName="employeesRowDeleted" msprop:Generator_UserTableName="employees" msprop:Generator_RowChangedName="employeesRowChanged" msprop:Generator_RowEvArgName="employeesRowChangeEvent" msprop:Generator_RowClassName="employeesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="emp_first_name" msprop:Generator_ColumnVarNameInTable="columnemp_first_name" msprop:Generator_ColumnPropNameInRow="emp_first_name" msprop:Generator_ColumnPropNameInTable="emp_first_nameColumn" msprop:Generator_UserColumnName="emp_first_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_last_name" msprop:Generator_ColumnVarNameInTable="columnemp_last_name" msprop:Generator_ColumnPropNameInRow="emp_last_name" msprop:Generator_ColumnPropNameInTable="emp_last_nameColumn" msprop:Generator_UserColumnName="emp_last_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_email" msprop:Generator_ColumnVarNameInTable="columnemp_email" msprop:Generator_ColumnPropNameInRow="emp_email" msprop:Generator_ColumnPropNameInTable="emp_emailColumn" msprop:Generator_UserColumnName="emp_email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_contact" msprop:Generator_ColumnVarNameInTable="columnemp_contact" msprop:Generator_ColumnPropNameInRow="emp_contact" msprop:Generator_ColumnPropNameInTable="emp_contactColumn" msprop:Generator_UserColumnName="emp_contact" type="xs:long" />
+              <xs:element name="emp_qualification" msprop:Generator_ColumnVarNameInTable="columnemp_qualification" msprop:Generator_ColumnPropNameInRow="emp_qualification" msprop:Generator_ColumnPropNameInTable="emp_qualificationColumn" msprop:Generator_UserColumnName="emp_qualification">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_city" msprop:Generator_ColumnVarNameInTable="columnemp_city" msprop:Generator_ColumnPropNameInRow="emp_city" msprop:Generator_ColumnPropNameInTable="emp_cityColumn" msprop:Generator_UserColumnName="emp_city">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_province" msprop:Generator_ColumnVarNameInTable="columnemp_province" msprop:Generator_ColumnPropNameInRow="emp_province" msprop:Generator_ColumnPropNameInTable="emp_provinceColumn" msprop:Generator_UserColumnName="emp_province">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_designation" msprop:Generator_ColumnVarNameInTable="columnemp_designation" msprop:Generator_ColumnPropNameInRow="emp_designation" msprop:Generator_ColumnPropNameInTable="emp_designationColumn" msprop:Generator_UserColumnName="emp_designation">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_bloodgroup" msprop:Generator_ColumnVarNameInTable="columnemp_bloodgroup" msprop:Generator_ColumnPropNameInRow="emp_bloodgroup" msprop:Generator_ColumnPropNameInTable="emp_bloodgroupColumn" msprop:Generator_UserColumnName="emp_bloodgroup">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_basicsalary" msprop:Generator_ColumnVarNameInTable="columnemp_basicsalary" msprop:Generator_ColumnPropNameInRow="emp_basicsalary" msprop:Generator_ColumnPropNameInTable="emp_basicsalaryColumn" msprop:Generator_UserColumnName="emp_basicsalary" type="xs:int" />
+              <xs:element name="emp_address" msprop:Generator_ColumnVarNameInTable="columnemp_address" msprop:Generator_ColumnPropNameInRow="emp_address" msprop:Generator_ColumnPropNameInTable="emp_addressColumn" msprop:Generator_UserColumnName="emp_address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

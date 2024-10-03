@@ -29,12 +29,13 @@ namespace EmployeePayRollManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard_PayRoll));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel_sidebar = new System.Windows.Forms.Panel();
             this.btn_attendance = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_new_employee = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -47,6 +48,8 @@ namespace EmployeePayRollManagementSystem
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_newEmployee = new System.Windows.Forms.Panel();
+            this.lbl_admin_email = new System.Windows.Forms.Label();
+            this.pb_dashboard_admin = new System.Windows.Forms.PictureBox();
             this.panel_employees_record = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -57,13 +60,28 @@ namespace EmployeePayRollManagementSystem
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pb_dashboard_admin = new System.Windows.Forms.PictureBox();
-            this.lbl_admin_email = new System.Windows.Forms.Label();
+            this.emp_payrollDataSetInformationTable = new EmployeePayRollManagementSystem.emp_payrollDataSetInformationTable();
+            this.emppayrollDataSetInformationTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.emp_payrollDataSetEmployeesInformationTable = new EmployeePayRollManagementSystem.emp_payrollDataSetEmployeesInformationTable();
+            this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.employeesTableAdapter = new EmployeePayRollManagementSystem.emp_payrollDataSetEmployeesInformationTableTableAdapters.employeesTableAdapter();
+            this.empfirstnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emplastnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empemailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empcontactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empqualificationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empcityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empprovinceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empdesignationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empbloodgroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empbasicsalaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empaddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel_newEmployee.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_dashboard_admin)).BeginInit();
             this.panel_employees_record.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_employee_record)).BeginInit();
@@ -72,7 +90,10 @@ namespace EmployeePayRollManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_dashboard_admin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emp_payrollDataSetInformationTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emppayrollDataSetInformationTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emp_payrollDataSetEmployeesInformationTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_sidebar
@@ -109,11 +130,11 @@ namespace EmployeePayRollManagementSystem
             this.btn_attendance.ColorContrastOnClick = 45;
             this.btn_attendance.ColorContrastOnHover = 45;
             this.btn_attendance.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btn_attendance.CustomizableEdges = borderEdges1;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btn_attendance.CustomizableEdges = borderEdges6;
             this.btn_attendance.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_attendance.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_attendance.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -199,11 +220,11 @@ namespace EmployeePayRollManagementSystem
             this.btn_new_employee.ColorContrastOnClick = 45;
             this.btn_new_employee.ColorContrastOnHover = 45;
             this.btn_new_employee.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btn_new_employee.CustomizableEdges = borderEdges2;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btn_new_employee.CustomizableEdges = borderEdges7;
             this.btn_new_employee.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_new_employee.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_new_employee.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -289,11 +310,11 @@ namespace EmployeePayRollManagementSystem
             this.btn_author.ColorContrastOnClick = 45;
             this.btn_author.ColorContrastOnHover = 45;
             this.btn_author.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btn_author.CustomizableEdges = borderEdges3;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btn_author.CustomizableEdges = borderEdges8;
             this.btn_author.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_author.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_author.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -379,11 +400,11 @@ namespace EmployeePayRollManagementSystem
             this.btn_emp_record.ColorContrastOnClick = 45;
             this.btn_emp_record.ColorContrastOnHover = 45;
             this.btn_emp_record.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btn_emp_record.CustomizableEdges = borderEdges4;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.btn_emp_record.CustomizableEdges = borderEdges9;
             this.btn_emp_record.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_emp_record.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_emp_record.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -469,11 +490,11 @@ namespace EmployeePayRollManagementSystem
             this.btn_payroll.ColorContrastOnClick = 45;
             this.btn_payroll.ColorContrastOnHover = 45;
             this.btn_payroll.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btn_payroll.CustomizableEdges = borderEdges5;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.btn_payroll.CustomizableEdges = borderEdges10;
             this.btn_payroll.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_payroll.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_payroll.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -618,6 +639,29 @@ namespace EmployeePayRollManagementSystem
             this.panel_newEmployee.Size = new System.Drawing.Size(1191, 776);
             this.panel_newEmployee.TabIndex = 2;
             // 
+            // lbl_admin_email
+            // 
+            this.lbl_admin_email.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbl_admin_email.AutoSize = true;
+            this.lbl_admin_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_admin_email.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_admin_email.Location = new System.Drawing.Point(712, 45);
+            this.lbl_admin_email.Name = "lbl_admin_email";
+            this.lbl_admin_email.Size = new System.Drawing.Size(98, 16);
+            this.lbl_admin_email.TabIndex = 2;
+            this.lbl_admin_email.Text = "Admin Email:";
+            // 
+            // pb_dashboard_admin
+            // 
+            this.pb_dashboard_admin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pb_dashboard_admin.Location = new System.Drawing.Point(1079, 0);
+            this.pb_dashboard_admin.Name = "pb_dashboard_admin";
+            this.pb_dashboard_admin.Size = new System.Drawing.Size(109, 100);
+            this.pb_dashboard_admin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_dashboard_admin.TabIndex = 1;
+            this.pb_dashboard_admin.TabStop = false;
+            // 
             // panel_employees_record
             // 
             this.panel_employees_record.BackColor = System.Drawing.SystemColors.Window;
@@ -653,10 +697,26 @@ namespace EmployeePayRollManagementSystem
             // 
             // dgv_employee_record
             // 
+            this.dgv_employee_record.AllowUserToDeleteRows = false;
+            this.dgv_employee_record.AutoGenerateColumns = false;
             this.dgv_employee_record.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_employee_record.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.empfirstnameDataGridViewTextBoxColumn,
+            this.emplastnameDataGridViewTextBoxColumn,
+            this.empemailDataGridViewTextBoxColumn,
+            this.empcontactDataGridViewTextBoxColumn,
+            this.empqualificationDataGridViewTextBoxColumn,
+            this.empcityDataGridViewTextBoxColumn,
+            this.empprovinceDataGridViewTextBoxColumn,
+            this.empdesignationDataGridViewTextBoxColumn,
+            this.empbloodgroupDataGridViewTextBoxColumn,
+            this.empbasicsalaryDataGridViewTextBoxColumn,
+            this.empaddressDataGridViewTextBoxColumn});
+            this.dgv_employee_record.DataSource = this.employeesBindingSource;
             this.dgv_employee_record.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgv_employee_record.Location = new System.Drawing.Point(0, 151);
             this.dgv_employee_record.Name = "dgv_employee_record";
+            this.dgv_employee_record.ReadOnly = true;
             this.dgv_employee_record.Size = new System.Drawing.Size(1076, 385);
             this.dgv_employee_record.TabIndex = 0;
             // 
@@ -730,28 +790,106 @@ namespace EmployeePayRollManagementSystem
             this.panel3.TabIndex = 0;
             this.panel3.Visible = false;
             // 
-            // pb_dashboard_admin
+            // emp_payrollDataSetInformationTable
             // 
-            this.pb_dashboard_admin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pb_dashboard_admin.Location = new System.Drawing.Point(1079, 0);
-            this.pb_dashboard_admin.Name = "pb_dashboard_admin";
-            this.pb_dashboard_admin.Size = new System.Drawing.Size(109, 100);
-            this.pb_dashboard_admin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_dashboard_admin.TabIndex = 1;
-            this.pb_dashboard_admin.TabStop = false;
+            this.emp_payrollDataSetInformationTable.DataSetName = "emp_payrollDataSetInformationTable";
+            this.emp_payrollDataSetInformationTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // lbl_admin_email
+            // emppayrollDataSetInformationTableBindingSource
             // 
-            this.lbl_admin_email.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.lbl_admin_email.AutoSize = true;
-            this.lbl_admin_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_admin_email.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_admin_email.Location = new System.Drawing.Point(712, 45);
-            this.lbl_admin_email.Name = "lbl_admin_email";
-            this.lbl_admin_email.Size = new System.Drawing.Size(98, 16);
-            this.lbl_admin_email.TabIndex = 2;
-            this.lbl_admin_email.Text = "Admin Email:";
+            this.emppayrollDataSetInformationTableBindingSource.DataSource = this.emp_payrollDataSetInformationTable;
+            this.emppayrollDataSetInformationTableBindingSource.Position = 0;
+            // 
+            // emp_payrollDataSetEmployeesInformationTable
+            // 
+            this.emp_payrollDataSetEmployeesInformationTable.DataSetName = "emp_payrollDataSetEmployeesInformationTable";
+            this.emp_payrollDataSetEmployeesInformationTable.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // employeesBindingSource
+            // 
+            this.employeesBindingSource.DataMember = "employees";
+            this.employeesBindingSource.DataSource = this.emp_payrollDataSetEmployeesInformationTable;
+            // 
+            // employeesTableAdapter
+            // 
+            this.employeesTableAdapter.ClearBeforeFill = true;
+            // 
+            // empfirstnameDataGridViewTextBoxColumn
+            // 
+            this.empfirstnameDataGridViewTextBoxColumn.DataPropertyName = "emp_first_name";
+            this.empfirstnameDataGridViewTextBoxColumn.HeaderText = "First Name";
+            this.empfirstnameDataGridViewTextBoxColumn.Name = "empfirstnameDataGridViewTextBoxColumn";
+            this.empfirstnameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emplastnameDataGridViewTextBoxColumn
+            // 
+            this.emplastnameDataGridViewTextBoxColumn.DataPropertyName = "emp_last_name";
+            this.emplastnameDataGridViewTextBoxColumn.HeaderText = "Last Name";
+            this.emplastnameDataGridViewTextBoxColumn.Name = "emplastnameDataGridViewTextBoxColumn";
+            this.emplastnameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // empemailDataGridViewTextBoxColumn
+            // 
+            this.empemailDataGridViewTextBoxColumn.DataPropertyName = "emp_email";
+            this.empemailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.empemailDataGridViewTextBoxColumn.Name = "empemailDataGridViewTextBoxColumn";
+            this.empemailDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // empcontactDataGridViewTextBoxColumn
+            // 
+            this.empcontactDataGridViewTextBoxColumn.DataPropertyName = "emp_contact";
+            this.empcontactDataGridViewTextBoxColumn.HeaderText = "Contact";
+            this.empcontactDataGridViewTextBoxColumn.Name = "empcontactDataGridViewTextBoxColumn";
+            this.empcontactDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // empqualificationDataGridViewTextBoxColumn
+            // 
+            this.empqualificationDataGridViewTextBoxColumn.DataPropertyName = "emp_qualification";
+            this.empqualificationDataGridViewTextBoxColumn.HeaderText = "Qualification";
+            this.empqualificationDataGridViewTextBoxColumn.Name = "empqualificationDataGridViewTextBoxColumn";
+            this.empqualificationDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // empcityDataGridViewTextBoxColumn
+            // 
+            this.empcityDataGridViewTextBoxColumn.DataPropertyName = "emp_city";
+            this.empcityDataGridViewTextBoxColumn.HeaderText = "City";
+            this.empcityDataGridViewTextBoxColumn.Name = "empcityDataGridViewTextBoxColumn";
+            this.empcityDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // empprovinceDataGridViewTextBoxColumn
+            // 
+            this.empprovinceDataGridViewTextBoxColumn.DataPropertyName = "emp_province";
+            this.empprovinceDataGridViewTextBoxColumn.HeaderText = "Province";
+            this.empprovinceDataGridViewTextBoxColumn.Name = "empprovinceDataGridViewTextBoxColumn";
+            this.empprovinceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // empdesignationDataGridViewTextBoxColumn
+            // 
+            this.empdesignationDataGridViewTextBoxColumn.DataPropertyName = "emp_designation";
+            this.empdesignationDataGridViewTextBoxColumn.HeaderText = "Designation";
+            this.empdesignationDataGridViewTextBoxColumn.Name = "empdesignationDataGridViewTextBoxColumn";
+            this.empdesignationDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // empbloodgroupDataGridViewTextBoxColumn
+            // 
+            this.empbloodgroupDataGridViewTextBoxColumn.DataPropertyName = "emp_bloodgroup";
+            this.empbloodgroupDataGridViewTextBoxColumn.HeaderText = "Bloodgroup";
+            this.empbloodgroupDataGridViewTextBoxColumn.Name = "empbloodgroupDataGridViewTextBoxColumn";
+            this.empbloodgroupDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // empbasicsalaryDataGridViewTextBoxColumn
+            // 
+            this.empbasicsalaryDataGridViewTextBoxColumn.DataPropertyName = "emp_basicsalary";
+            this.empbasicsalaryDataGridViewTextBoxColumn.HeaderText = "Basic Salary";
+            this.empbasicsalaryDataGridViewTextBoxColumn.Name = "empbasicsalaryDataGridViewTextBoxColumn";
+            this.empbasicsalaryDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // empaddressDataGridViewTextBoxColumn
+            // 
+            this.empaddressDataGridViewTextBoxColumn.DataPropertyName = "emp_address";
+            this.empaddressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.empaddressDataGridViewTextBoxColumn.Name = "empaddressDataGridViewTextBoxColumn";
+            this.empaddressDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Dashboard_PayRoll
             // 
@@ -775,6 +913,7 @@ namespace EmployeePayRollManagementSystem
             this.panel2.PerformLayout();
             this.panel_newEmployee.ResumeLayout(false);
             this.panel_newEmployee.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_dashboard_admin)).EndInit();
             this.panel_employees_record.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -785,7 +924,10 @@ namespace EmployeePayRollManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_dashboard_admin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emp_payrollDataSetInformationTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emppayrollDataSetInformationTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emp_payrollDataSetEmployeesInformationTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -816,5 +958,21 @@ namespace EmployeePayRollManagementSystem
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pb_dashboard_admin;
         private System.Windows.Forms.Label lbl_admin_email;
+        private emp_payrollDataSetInformationTable emp_payrollDataSetInformationTable;
+        private System.Windows.Forms.BindingSource emppayrollDataSetInformationTableBindingSource;
+        private emp_payrollDataSetEmployeesInformationTable emp_payrollDataSetEmployeesInformationTable;
+        private System.Windows.Forms.BindingSource employeesBindingSource;
+        private emp_payrollDataSetEmployeesInformationTableTableAdapters.employeesTableAdapter employeesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empfirstnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emplastnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empemailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empcontactDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empqualificationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empcityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empprovinceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empdesignationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empbloodgroupDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empbasicsalaryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empaddressDataGridViewTextBoxColumn;
     }
 }
