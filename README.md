@@ -1,2 +1,2 @@
 # EmployeePayRollManagementSystem
-I am developing this project for my showcase
+Project developed in CSharp with MS Sql Server
