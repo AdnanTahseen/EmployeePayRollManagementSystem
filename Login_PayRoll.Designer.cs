@@ -31,7 +31,7 @@ namespace EmployeePayRollManagementSystem
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_PayRoll));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pb_logo_login = new System.Windows.Forms.PictureBox();
@@ -175,11 +175,11 @@ namespace EmployeePayRollManagementSystem
             this.btn_login.ColorContrastOnClick = 45;
             this.btn_login.ColorContrastOnHover = 45;
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btn_login.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btn_login.CustomizableEdges = borderEdges1;
             this.btn_login.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_login.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_login.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -253,6 +253,7 @@ namespace EmployeePayRollManagementSystem
             this.tb_password.Name = "tb_password";
             this.tb_password.Size = new System.Drawing.Size(171, 22);
             this.tb_password.TabIndex = 1;
+            this.tb_password.UseSystemPasswordChar = true;
             this.tb_password.Leave += new System.EventHandler(this.Tb_password_Leave);
             // 
             // label4

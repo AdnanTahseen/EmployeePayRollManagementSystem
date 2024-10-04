@@ -322,7 +322,7 @@ namespace EmployeePayRollManagementSystem
 
         private void Btn_set_allowances_Click(object sender, EventArgs e)
         {
-            bool checkID = checkSalaryAgainstEmpID();
+            
             string sql_query = "INSERT INTO salaryWithAllowances(emp_id,emp_name,emp_designation,emp_basicpay," +
                 "emp_con_allowance,emp_med_allowance,emp_hr_allowance,emp_grosspay,emp_incometax,emp_netsalary)" +
                 " values(@emp_id,@emp_name,@emp_designation,@emp_basicpay,@emp_con_allowance,@emp_med_allowance," +
@@ -331,7 +331,8 @@ namespace EmployeePayRollManagementSystem
             {
                 try
                 {
-                    if(checkID==false)
+                    bool checkID = checkSalaryAgainstEmpID();
+                    if (checkID==false)
                     {
                         SqlConnection allowance_con = new SqlConnection(allowance_string);
                         allowance_con.Open();
@@ -366,7 +367,8 @@ namespace EmployeePayRollManagementSystem
         private bool checkSalaryAgainstEmpID()
         {
             bool answer;
-            string sql_query = "SELECT emp_id FROM salaryWithAllowances";
+            int id = int.Parse(cb_emp_id.Text);
+            string sql_query = "SELECT * FROM salaryWithAllowances where emp_id='"+id+"'";
             try
             {
                 SqlConnection allowance_con = new SqlConnection(allowance_string);
